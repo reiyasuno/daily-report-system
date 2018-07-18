@@ -39,7 +39,7 @@ public class EmployeesEditServlet extends HttpServlet {
 
 		em.close();
 
-		request.setAttribute("enployee", e);
+		request.setAttribute("employee", e);
 		request.setAttribute("_token", request.getSession().getId());
 		request.getSession().setAttribute("employee_id", e.getId());
 
